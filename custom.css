@@ -17,7 +17,7 @@
 
 /* change star (favorite) button to a heart */
 .fa-star:before {
-    content: "\F004";
+  content: "\F004";
 
 }
 
