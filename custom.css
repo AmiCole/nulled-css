@@ -1,0 +1,52 @@
+/* nulled-css - https://git.nulled.red/ami/nulled-css */
+
+/* remove useless number next to the reply icon */
+.status__action-bar__counter__label { 
+  display: none; 
+}
+
+/* disable css spin animation for star (favorite) button */
+.fa-fw {
+  transform: rotate(0deg) !important;
+}
+
+/* change star (favorite) button's color to red */
+.star-icon.active, .notification__favourite-icon-wrapper .star-icon {
+  color: #FF3838;
+}
+
+/* change star (favorite) button to a heart */
+.fa-star:before {
+    content: "\F004";
+
+}
+
+/* removes "TOOT!" text from post button */
+#mastodon > div > div > div.columns-area__panels > div.columns-area__panels__pane.columns-area__panels__pane--compositional > div > div > div.compose-form > div.compose-form__publish > div > button, #mastodon > div > div > div.columns-area > div.drawer > div.drawer__pager > div:nth-child(1) > div.compose-form > div.compose-form__publish > div > button {
+  color: transparent;
+  overflow: visible;
+}
+
+/* change post button text "POST!" */
+#mastodon > div > div > div.columns-area__panels > div.columns-area__panels__pane.columns-area__panels__pane--compositional > div > div > div.compose-form > div.compose-form__publish > div > button::after, #mastodon > div > div > div.columns-area > div.drawer > div.drawer__pager > div:nth-child(1) > div.compose-form > div.compose-form__publish > div > button::after {
+  content: "POST!"; /* change "POST!" to whatever you want your button to say */
+  color: white;
+  margin-left: -40px; /* you might have to modify this margin value */
+  overflow: visible;
+}
+
+/* change emoji picker icon to a different image */
+#mastodon > div > div > div.columns-area__panels > div.columns-area__panels__pane.columns-area__panels__pane--compositional > div > div > div.compose-form > div.compose-form__autosuggest-wrapper > div.emoji-picker-dropdown > div > img, #mastodon > div > div > div.columns-area > div.drawer > div.drawer__pager > div:nth-child(1) > div.compose-form > div.compose-form__autosuggest-wrapper > div.emoji-picker-dropdown > div > img {
+  content:url("https://cdn.nulled.red/mastodon-nulled/custom_emojis/images/000/025/706/original/fb18513e76cfa2ba.png"); /* change this URL to point to your replacement image */
+}
+
+/* april fools 2019 css hack, changed everyone's avatar to a skeleton gif, you probably should leave this commented out */
+/*.account__avatar, body > div.public-layout > div:nth-child(2) > div.public-account-header > div.public-account-header__bar > a > img, #mastodon > div > div > div.columns-area > div:nth-child(6) > div > div > div > div.account__header > div > a, .account__avatar-overlay-base, .account__avatar-overlay-overlay {
+  content:url(""); 
+}*/
+
+/* no clue what the hell this does, but it must be important */
+.focusable.status__wrapper--filtered.status__wrapper {
+  display: none;
+}
+
