@@ -27,7 +27,7 @@
   overflow: visible;
 }
 
-/* change post button text "POST!" */
+/* change post button text to "POST!" */
 #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__pane.columns-area__panels__pane--compositional > div > div > div.compose-form > div.compose-form__publish > div > button::after, #mastodon > div > div > div.columns-area > div.drawer > div.drawer__pager > div:nth-child(1) > div.compose-form > div.compose-form__publish > div > button::after {
   content: "POST!"; /* change "POST!" to whatever you want your button to say */
   color: white;
