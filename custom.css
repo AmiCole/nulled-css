@@ -37,7 +37,7 @@
 
 /* change emoji picker icon to a different image */
 #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__pane.columns-area__panels__pane--compositional > div > div > div.compose-form > div.compose-form__autosuggest-wrapper > div.emoji-picker-dropdown > div > img, #mastodon > div > div > div.columns-area > div.drawer > div.drawer__pager > div:nth-child(1) > div.compose-form > div.compose-form__autosuggest-wrapper > div.emoji-picker-dropdown > div > img {
-  content:url("https://cdn.nulled.red/mastodon-nulled/custom_emojis/images/000/025/706/original/fb18513e76cfa2ba.png"); /* change this URL to point to your replacement image */
+  content:url(""); /* change this URL to point to your replacement image */
 }
 
 /* april fools 2019 css hack, changed everyone's avatar to a skeleton gif, you probably should leave this commented out */
